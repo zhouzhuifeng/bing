@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			width: 600px;
+			height: 500px;
+			margin: 100px auto;
+			/*border: 1px solid #ccc;*/
+			position: relative;
+			
+		}
+		.bb,.zz{
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			border: 1px solid #000;
+			position: absolute;
+			top: 0;
+			left: -50px;
+			
+		}
+		.bb{
+			top: -50px;
+			left: 130px;
+			animation: bb 6s linear infinite;
+			background-image: url('img/b7.jpg');
+			background-size: cover;
+			
+		}
+		
+
+		.zz{
+			top: -50px;
+			animation: zz 6s linear infinite;
+			background-image: url('img/z1.jpg');
+			background-size: cover;
+			
+		}
+		@keyframes zz{
+			0%{
+
+			}
+			25%{
+				transform: translate(600px,0);
+			}
+			50%{
+				transform: translate(600px,500px);
+			}
+			75%{
+				transform: translate(0,500px);
+			}
+			100%{
+				
+			}
+		}
+		@keyframes bb{
+			0%{
+
+			}
+			20%{
+				transform: translate(420px,0);
+			}
+			40%{
+				transform: translate(420px,500px);
+			}
+			60%{
+				transform: translate(-180px,500px);
+			}
+			80%{
+				transform: translate(-180px,0);
+			}
+			100%{
+				/*transform: translate(0,0);*/
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="zz"></div>
+	<div class="bb"></div>
+</body>
+	</div>
+</html>
